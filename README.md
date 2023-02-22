@@ -5,7 +5,7 @@ This project uses machine learning algorithms to recognize hand gestures represe
 The dataset used in this project is a collection of images of hands with different numbers of fingers extended. Each image is labeled with the correct number of fingers represented in the image. The dataset consists of 360 images, with 72 images for each of the numbers 1 to 5. The images are grayscale, high contrasted and have a resolution of 64 x 64 pixels.
 
 ## Preprocessing
-Before training the machine learning models, the images are preprocessed to improve the quality of the data. First, the images are resized to 32 x 32 pixels to reduce the computational requirements. Then, the pixel values are scaled between 0 and 1. Finally, the dataset is split into a training set (88%), valid test (8%), and a test set (4%).
+Before training the machine learning models, the images are preprocessed to optimize border detection, with grayscale, noise and rotations. Finally, the dataset is split into a training set (88%), valid test (8%), and a test set (4%).
 
 ## Models
 We used [YoloV8](https://github.com/ultralytics/ultralytics) for this task. The performance of each model is evaluated using accuracy, precision, recall, and F1 score on the test set. The best model is selected based on its performance.
